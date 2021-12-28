@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'bubble';
+  src: url('Font/04b_30__-webfont.woff2') format('woff2'),
+       url('Font/04b_30__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'pixel';
+  src: url('Font/pixeloperator-webfont.woff2') format('woff2'),
+       url('Font/pixeloperator-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pixel';
+  src: url('Font/pixeloperator-bold-webfont.woff2') format('woff2'),
+       url('Font/pixeloperator-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+:root {
+  /*Color*/
+  --black: #000000;
+  --white: #FFFFFF;
+  --darkpurple: #2A106A;
+  --purple: #5925D6;
+  --purple-glow: #979BFF;
+  --brightpurple: #7613F3;
+  --blue: #1C18EE;
+}
+
+html, body
+  { 
+    background-color: var(--black);
+    color: var(--white);
+    vertical-align: baseline;
+    
+    border: 0 none;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  
+    font-family: 'pixel';
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+
+  @media (min-width: 576px) {
+    html {
+      font-size: 14px;
+    }
+    .space {
+      margin: 5% 0;
+    }
+  }
+    /* Medium devices (tablets, 768px and up) */
+  
+  @media (min-width: 768px) {
+  
+    html {
+      font-size: 16px;
+    }
+  
+  }
+  /* Large devices (desktops, 992px and up) */
+  
+  @media (min-width: 992px) { 
+    html {
+      font-size: 20px;
+    }
+   }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  
+  @media (min-width: 1200px) {
+    html {
+      font-size: 24px;
+    }
+  }
+
+h1, h2 {
+  font-family: 'bubble';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+ 
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: var(--blue);
+  
+}
+
+h2 {
+  font-size: 2rem; 
+  line-height: 2rem;  
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-family: 'bubble';
+  font-size: 1.6rem;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: var(--purple);
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+hr {  
+  width: 100%;  
+  border-width: 4px;  
+  border-radius: 4px;
+  border-color: var(--purple);  
+}  
+
+img {
+  width: 100%;
+  /* padding: 0 4rem 1rem 4rem; */
+  
+}
+
+section {
+  margin: 5% 0;
+}
+
+nav {
+  padding: 2rem 0;
+}
+nav button {
+  color: white;
+}
+
+
+nav h1{
+  font-size: 1rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--blue);
+}
+
+a {
+  color: var(--white);
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+a:hover {
+  color: var(--brightpurple);
+  text-decoration: none;
+}
+
+button {
+background-color: var(--purple);
+color: var(--white);
+font-size: 1rem;
+font-weight: bold;
+align-items: center;
+padding: 0.6rem 1rem;
+box-shadow: inset 0px 0px 0.4rem 0.2rem rgba(181, 197, 255, 0.5);
+border-radius: 0.6rem;
+border: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-image: url("Images/Banner.png");
+    min-height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-items {
+ border-width: 20px;
+ border-color: red;
+}
+
+.banner-items h3 {
+  font-family: bubble;
+
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: var(--purple);
+}
+
+
+
+
+.section {
+  border: 0.2rem solid var(--purple);
+  border-radius: 2rem 0;
+  box-shadow: 0px 0px 0px 0.2rem var(--purple-glow);
+  text-align: center;
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 10% 0;
+  
+}
+
+
+
+
+/* Carousel */
+
+/* Timer */
+#timer div {
+  background-color: var(--purple);
+  width: 6rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  margin: 0 0.7rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+  #timer {
+    margin-top: -20px;
+  }
+  #timer div {
+    width: 5rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+ }
+ #timer div span {
+   font-size: 0.7rem;
+ }
+}
