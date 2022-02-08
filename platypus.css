@@ -66,10 +66,10 @@ h1, h2 {
   -webkit-text-stroke-color: var(--blue);
   
 }
-
+/* 
 h1 {
   -webkit-text-stroke-color: var(--purple);
-}
+} */
 
 h2 {
   font-size: 2rem; 
