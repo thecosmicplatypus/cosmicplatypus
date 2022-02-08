@@ -2,7 +2,7 @@
     
 // Canvas
 console.clear()
-console.log('lsakdfalskjdflnksd')
+console.log('log')
 
 const config = {
   src: 'Images/Sprite.png',

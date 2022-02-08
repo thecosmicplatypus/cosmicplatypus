@@ -67,6 +67,10 @@ h1, h2 {
   
 }
 
+h1 {
+  -webkit-text-stroke-color: var(--purple);
+}
+
 h2 {
   font-size: 2rem; 
   line-height: 2rem;  
@@ -122,6 +126,13 @@ nav button {
   color: white;
 }
 
+.nav-item a{
+ color: var(--white) !important;;
+}
+
+.nav-item a:hover{
+  color: var(--brightpurple) !important;;
+ }
 
 nav h1{
   font-size: 1rem;
@@ -229,7 +240,7 @@ border: 0;
 
  .items img {
     height: 100%;
-    width: 100%;
+    width: auto;
     transition: all 3s ease;
     }
 
@@ -296,6 +307,7 @@ border: 0;
             border: 0.2rem solid var(--purple);
             border-radius: 2rem 0;         
           }
+
 
 /* Timer */
 #timer div {
