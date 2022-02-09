@@ -312,10 +312,10 @@ border: 0;
 /* Timer */
 #timer div {
   background-color: var(--purple);
-  width: 6rem;
-  height: 4rem;
+  width: 5rem;
+  height: 3.6rem;
   border-radius: 0.6rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 0 0.8rem;
 }
 
@@ -325,14 +325,14 @@ border: 0;
     margin-top: 0rem;
   }
   #timer div {
-    width: 3.4rem;
-    height: 2.6rem;
+    width: 3.2rem;
+    height: 2.4rem;
     font-size: 1rem;
     margin-top: 0.6rem;
     margin: 0 0.5rem;
  }
- #timer div span {
-   font-size: 0.2rem;
+ #timer span {
+   font-size: 1rem;
  } 
 }
 
